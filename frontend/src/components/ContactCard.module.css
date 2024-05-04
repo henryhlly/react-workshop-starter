@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+.card {
+  /* height: 90px; */
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  background-color: #f5f0f0;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+}
+
+.placeholder {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.card:is(.active, :hover) {
+  background-color: #e8e4e4;
+}
